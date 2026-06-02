@@ -287,7 +287,7 @@ Prediction Displayed to User
 
 # 👨‍💻 Author
 
-**Ashish Pandey**
+**Ashish Pandeya**
 
 - Data Engineering & AI Enthusiast
 - Interested in Machine Learning, Deep Learning, Data Engineering, and Cloud Technologies
