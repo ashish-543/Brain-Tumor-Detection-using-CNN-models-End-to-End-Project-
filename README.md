@@ -99,7 +99,10 @@ Model Comparison & Analysis
 - Seaborn
 - Scikit-Learn
 - Kaggle Notebook Environment
-
+- HTML
+- CSS
+- Javascript
+- Flask
 ---
 
 ## 🤖 Transfer Learning Models
@@ -204,6 +207,71 @@ An advanced architecture based on depthwise separable convolutions, providing hi
 | Precision | 97.00% |
 | Recall | 96.75% |
 | F1-Score | 97.00% |
+
+---
+
+## 🚀 Model Deployment
+
+### Frontend Development
+
+The frontend of the application was developed using:
+
+* **HTML** for structuring the web interface.
+* **CSS** for styling and responsive design.
+* **JavaScript** for user interaction and dynamic functionality.
+
+#### Frontend Workflow
+
+1. User uploads an MRI brain scan image.
+2. User clicks the **Predict** button.
+3. The image is sent to the backend for processing.
+4. The prediction result is returned and displayed on the webpage.
+5. A corresponding diagnostic message is shown based on the predicted class.
+
+---
+
+### Backend Development
+
+The backend of the application was developed using **Flask**, a lightweight Python web framework.
+
+#### Backend Workflow
+
+1. Flask loads the pre-trained deep learning model during application startup.
+2. The uploaded MRI image is received from the frontend.
+3. The image undergoes preprocessing to match the model's input requirements.
+4. The processed image is passed to the trained model for inference.
+5. The model generates a prediction for the tumor class.
+6. The prediction result is sent back to the frontend.
+7. The frontend displays the predicted class and corresponding message to the user.
+
+---
+
+### Deployment Pipeline
+
+```text
+User Uploads MRI Image
+          │
+          ▼
+Frontend (HTML/CSS/JavaScript)
+          │
+          ▼
+Flask Backend
+          │
+          ▼
+Image Preprocessing
+          │
+          ▼
+Trained Transfer Learning Model
+          │
+          ▼
+Prediction Generation
+          │
+          ▼
+Result Sent to Frontend
+          │
+          ▼
+Prediction Displayed to User
+```
 
 ---
 
